@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+
+      */
+      body {
+        background-color: hsl(212, 45%, 89%);
+      }
+
+      .container {
+        width: 1140px;
+        background-color: hsl(212, 45%, 89%);
+      }
+      .QR-box {
+        height: 500px;
+        width: 320px;
+        margin: 20% auto;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 8px;
+        padding-top: -81px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 1px 1px 10px hsl(212, 45%, 89%);
+      }
+      .qr-img {
+        width: 284px;
+        padding-bottom: 1.2rem;
+        border-radius: 15px 12px;
+        /* box-shadow: 1px 1px 5px hsl(218, 44%, 22%); */
+      }
+
+      .title-head {
+        color: hsl(218, 44%, 22%);
+        font-family: outfit;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-bottom: 1.2rem;
+      }
+
+      .second-text,
+      .third-text {
+        font-family: outfit;
+        color: hsl(220, 15%, 55%);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="QR-box">
+        <img src="image-qr-code.png" alt="QR code" class="qr-img" />
+
+        <h1 class="title-head">
+          Improve your front-end skills by building projects
+        </h1>
+
+        <p class="second-text">Scan the QR code to visit</p>
+
+        <p class="third-text">
+          Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
